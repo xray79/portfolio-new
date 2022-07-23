@@ -33,3 +33,10 @@
   border-radius: 5px;
   max-width: 120rem;
 }
+
+@media (max-width: 935px) {
+  .gridContainer {
+    grid-template-columns: 1fr;
+    place-items: center;
+  }
+}
