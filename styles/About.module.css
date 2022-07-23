@@ -1,0 +1,35 @@
+.aboutSection {
+  background-color: #00171f;
+  color: rgb(221, 202, 202);
+  padding-top: 20rem;
+  font-size: 2rem;
+}
+
+.container {
+  max-width: 100rem;
+  padding: 0 5rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.container > div {
+  margin-bottom: 10rem;
+}
+
+.container div h2 {
+  font-size: 3rem;
+  margin-bottom: 2.5rem;
+  border-bottom: 1px solid rgb(221, 202, 202);
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  background-color: #024257;
+  gap: 2rem;
+  padding: 2rem;
+  margin: 5rem;
+  border-radius: 5px;
+  max-width: 120rem;
+}

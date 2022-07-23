@@ -1,0 +1,26 @@
+.cards {
+  text-align: center;
+  height: 35rem;
+  background-color: skyblue;
+  border-radius: 5px;
+}
+
+.cards > h4 {
+  margin: 2rem 0;
+  font-size: 3rem;
+}
+
+.cards > p {
+  font-size: 1.8rem;
+  margin-bottom: 3rem;
+  padding: 0 3rem;
+}
+
+.link {
+  font-size: 1.5rem;
+  display: inline-block;
+  background-color: aquamarine;
+  padding: 1rem;
+  border-radius: 5px;
+  margin-left: 2rem;
+}
