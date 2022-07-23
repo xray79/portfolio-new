@@ -38,3 +38,14 @@
   background-color: skyblue;
   border-radius: 5px;
 }
+
+@media (max-width: 935px) {
+  .gridContainer {
+    grid-template-columns: 1fr;
+    place-items: center;
+  }
+
+  .cards {
+    height: auto;
+  }
+}

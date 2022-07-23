@@ -43,7 +43,7 @@ const Projects = () => {
     name: "Dice game",
     desc: "description placeholder",
     live: "link to live code",
-    code: "link to github repo",
+    code: "link to github",
   };
 
   const courseProjects = [
