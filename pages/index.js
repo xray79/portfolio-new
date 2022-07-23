@@ -34,8 +34,8 @@ const Home = () => {
         <div className={styles.textContainer}>
           <h1>Ibnul Huq</h1>
           <p>
-            I'm an aspiring Full Stack Developer looking to get my first role in
-            the industry.
+            I am an aspiring Full Stack Developer looking to get my first role
+            in the industry.
           </p>
           <button className={`${styles.btn} ${styles.btnHero}`}>
             <a href="#about">More info ↓</a>

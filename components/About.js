@@ -17,10 +17,9 @@ const About = () => {
         <div>
           <h2>My skills</h2>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            Dignissimos maxime iure amet consequatur voluptate quis est
-            reprehenderit omnis aliquam, magni sint. Adipisci consequatur fuga
-            dicta incidunt voluptates, labore minus iure!
+            Here is a list of skills I am familiar with. My main competencies
+            tend to fall within the MERN stack, however I am happy to work with
+            any of these technologies or learn something new.
           </p>
 
           <div className={stylesAbout.gridContainer}>
