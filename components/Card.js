@@ -7,22 +7,24 @@ function Card(props) {
       <div className={styles.cards}>
         <h4>{props.project.name}</h4>
         <p>{props.project.desc}</p>
-        <a
-          className={styles.link}
-          href={props.project.live}
-          target="_blank"
-          rel="noreferrer"
-        >
-          Live demo
-        </a>
-        <a
-          className={styles.link}
-          href={props.project.code}
-          target="_blank"
-          rel="noreferrer"
-        >
-          Github repo
-        </a>
+        <div className={styles.buttonsContainer}>
+          <a
+            className={styles.link}
+            href={props.project.live}
+            target="_blank"
+            rel="noreferrer"
+          >
+            Live demo
+          </a>
+          <a
+            className={styles.link}
+            href={props.project.code}
+            target="_blank"
+            rel="noreferrer"
+          >
+            Github repo
+          </a>
+        </div>
       </div>
     </>
   );
