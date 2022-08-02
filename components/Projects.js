@@ -46,17 +46,8 @@ const Projects = () => {
     code: "link to github",
   };
 
-  const courseProjects = [
-    project1,
-    project2,
-    project3,
-    project4,
-    project5,
-    project6,
-  ];
-
   return (
-    <section className={styles.projects}>
+    <section className={styles.projects} id="projects">
       <div className={styles.container}>
         <div>
           <h2 className={styles.mainHeading}>Projects</h2>
