@@ -3,6 +3,8 @@ import styles from "../styles/Home.module.css";
 import About from "../components/About";
 import Projects from "../components/Projects";
 import Contact from "../components/Contact";
+import Script from "next/script";
+import NavBar from "../components/NavBar";
 
 const Home = () => {
   return (
@@ -14,22 +16,7 @@ const Home = () => {
       </Head>
 
       <header className={styles.hero}>
-        <nav className={styles.nav}>
-          <ul>
-            <li className={styles.logo}>
-              <a href="#">HOME</a>
-            </li>
-            <li className={styles.links}>
-              <a href="#about">ABOUT</a>
-            </li>
-            <li className={styles.links}>
-              <a href="#projects">PROJECTS</a>
-            </li>
-            <li className={styles.links}>
-              <a href="#contact">CONTACT</a>
-            </li>
-          </ul>
-        </nav>
+        <NavBar />
 
         <div className={styles.textContainer}>
           <h1>Ibnul Huq</h1>

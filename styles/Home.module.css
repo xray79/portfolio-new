@@ -1,23 +1,4 @@
-.nav {
-  max-width: 120rem;
-  font-size: 1.5rem;
-  margin: 0 auto;
-}
-
-.nav ul {
-  list-style: none;
-  display: flex;
-  align-items: center;
-  padding: 2rem;
-}
-
-.logo {
-  margin-right: auto;
-}
-
-.links {
-  padding: 1rem;
-}
+/* hero section */
 
 .hero {
   background-image: linear-gradient(rgba(0, 0, 0, 0.699), rgba(0, 0, 0, 0.2)),
@@ -42,6 +23,8 @@
 .textContainer h1 {
   margin-bottom: 3rem;
 }
+
+/*  hero section button */
 
 .btn {
   padding: 1rem 2rem;

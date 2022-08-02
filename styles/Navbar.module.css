@@ -1,0 +1,62 @@
+/* navbar */
+
+.navBar {
+  max-width: 120rem;
+  font-size: 1.5rem;
+  margin: 0 auto;
+  padding: 2rem 3rem;
+}
+
+.navBar ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.home {
+  margin-right: auto;
+}
+
+.links {
+  padding: 1rem;
+}
+
+.btnMenu,
+.btnClose {
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: white;
+  display: none;
+  margin-left: auto;
+}
+
+/*  responsive navbar on click */
+.navBarRes {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(128, 128, 128, 0.21);
+  height: 100vh;
+  width: 100%;
+  z-index: 5;
+}
+.ulRes {
+  flex-direction: column;
+  justify-self: end;
+}
+.homeRes {
+  margin-right: 0;
+}
+
+/*  responsive media query */
+
+@media (max-width: 935px) {
+  .btnMenu {
+    display: block;
+  }
+
+  .hidden {
+    display: none;
+  }
+}

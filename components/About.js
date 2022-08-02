@@ -1,4 +1,3 @@
-import { NextComponentType } from "next";
 import stylesAbout from "../styles/About.module.css";
 import Logos from "./Logos";
 
