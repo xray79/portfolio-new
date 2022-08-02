@@ -19,3 +19,9 @@
 .contact span {
   color: rgb(157, 115, 115);
 }
+
+@media (max-width: 420px) {
+  .contact h2 {
+    font-size: 3rem;
+  }
+}
