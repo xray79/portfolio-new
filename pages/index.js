@@ -3,7 +3,6 @@ import styles from "../styles/Home.module.css";
 import About from "../components/About";
 import Projects from "../components/Projects";
 import Contact from "../components/Contact";
-import Script from "next/script";
 import NavBar from "../components/NavBar";
 
 const Home = () => {
@@ -34,7 +33,7 @@ const Home = () => {
 
       <Projects />
 
-      {/* <Contact /> */}
+      <Contact />
     </div>
   );
 };
