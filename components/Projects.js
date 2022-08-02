@@ -18,8 +18,8 @@ const Projects = () => {
           <h3>Course Projects</h3>
           <p>Projects done as part of a course</p>
           <div className={styles.gridContainer}>
-            {projectList.map((project) => (
-              <Card project={project} />
+            {projectList.map((project, i) => (
+              <Card key={i} project={project} />
             ))}
           </div>
         </div>
