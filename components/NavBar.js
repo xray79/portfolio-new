@@ -10,7 +10,7 @@ const NavBar = () => {
   const aboutRef = useRef();
   const contactRef = useRef();
 
-  const showMenu = (event) => {
+  const toggleMenu = (event) => {
     navRef.current.classList.toggle(styles.navBarRes);
     ulRef.current.classList.toggle(styles.ulRes);
     homeRef.current.classList.toggle(styles.homeRes);
@@ -49,7 +49,7 @@ const NavBar = () => {
             <a href="#contact">CONTACT</a>
           </li>
         </ul>
-        <button className={styles.btnMenu} onClick={showMenu}>
+        <button className={styles.btnMenu} onClick={toggleMenu}>
           <ion-icon name="menu-outline" size="large"></ion-icon>
         </button>
       </nav>
