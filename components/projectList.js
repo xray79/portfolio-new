@@ -1,6 +1,6 @@
 const project1 = {
   name: "Bank app",
-  desc: "A banking app made with pure JavaScript. This was done to learn array methods, DOM manipulation and the Internationalisation API. More info is available the GitHub Readme.",
+  desc: "A banking app made with pure JavaScript. This was done to learn array methods, DOM manipulation and the Internationalisation API. Login with: ih 1111 and js 2222",
   live: "https://xray79.github.io/bank-app/",
   code: "https://github.com/xray79/bank-app",
 };
