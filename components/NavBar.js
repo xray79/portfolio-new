@@ -1,4 +1,4 @@
-import styles from "../styles/Navbar.module.css";
+import styles from "../styles/Navbar.module.scss";
 import { useRef } from "react";
 import Script from "next/script";
 

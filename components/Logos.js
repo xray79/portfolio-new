@@ -1,5 +1,5 @@
 import Image from "next/image";
-import styles from "../styles/Logos.module.css";
+import styles from "../styles/Logos.module.scss";
 
 const Logos = (props) => {
   return (

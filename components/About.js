@@ -1,4 +1,4 @@
-import stylesAbout from "../styles/About.module.css";
+import stylesAbout from "../styles/About.module.scss";
 import Logos from "./Logos";
 
 const About = () => {
