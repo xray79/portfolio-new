@@ -4,6 +4,8 @@ import About from "../components/About";
 import Projects from "../components/Projects";
 import Contact from "../components/Contact";
 import NavBar from "../components/NavBar";
+import { Parallax, ParallaxLayer } from "react-spring";
+import { Footer } from "../components/Footer";
 
 const Home = () => {
   return (
@@ -34,6 +36,8 @@ const Home = () => {
       <Projects />
 
       <Contact />
+
+      <Footer />
     </div>
   );
 };
