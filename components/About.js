@@ -7,15 +7,18 @@ const About = () => {
       <div className={stylesAbout.container}>
         <div>
           <h2 className={stylesAbout.heading}>About me</h2>
-          <p>After studying many online courses</p>
+          <p>
+            After studying many online courses I have developed competence with
+            MERN stack technologies, i.e. MongoDB, Express, React and Node.
+          </p>
         </div>
 
         <div>
           <h2>My skills</h2>
           <p>
-            Here is a list of skills I am familiar with. My main competencies
-            tend to fall within the MERN stack, however I am happy to work with
-            any of these technologies or learn something new.
+            Here is a list of skills I am familiar with. While my main
+            competencies tend to fall within the MERN stack, I am happy to work
+            with any of these technologies or learn something new.
           </p>
 
           <div className={stylesAbout.gridContainer}>
