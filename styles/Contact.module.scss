@@ -64,3 +64,21 @@
     color: white;
   }
 }
+
+@media (max-width: 935px) {
+  .contact {
+    display: flex;
+    flex-direction: column;
+  }
+  .row {
+    flex-direction: column;
+  }
+  .input,
+  .inputEmail,
+  .inputTextArea {
+    width: 25rem;
+  }
+  .btn {
+    padding: 1rem 10rem;
+  }
+}
