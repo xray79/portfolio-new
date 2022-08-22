@@ -3,6 +3,7 @@
 .hero {
   background-image: linear-gradient(rgba(0, 0, 0, 0.699), rgba(0, 0, 0, 0.2)),
     url(../public/splash.webp);
+  background-attachment: fixed;
   background-size: cover;
   height: 100vh;
   font-size: 2rem;
