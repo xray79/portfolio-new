@@ -10,11 +10,13 @@ const NavBar = () => {
   const aboutRef = useRef();
   const contactRef = useRef();
 
-  const toggleMenu = (event) => {
+  const toggleMenu = () => {
+    // change menu to responsive at smaller screen
     navRef.current.classList.toggle(styles.navBarRes);
     ulRef.current.classList.toggle(styles.ulRes);
     homeRef.current.classList.toggle(styles.homeRes);
 
+    // hide and show menu
     homeRef.current.classList.toggle(styles.hidden);
     projectsRef.current.classList.toggle(styles.hidden);
     aboutRef.current.classList.toggle(styles.hidden);
@@ -37,16 +39,24 @@ const NavBar = () => {
             ref={homeRef}
             className={`${styles.links} ${styles.home} ${styles.hidden}`}
           >
-            <a href="#">HOME</a>
+            <a href="#" onClick={toggleMenu}>
+              HOME
+            </a>
           </li>
-          <li ref={aboutRef} className={`${styles.links}  ${styles.hidden}`}>
-            <a href="#about">ABOUT</a>
+          <li ref={aboutRef} className={`${styles.links} ${styles.hidden}`}>
+            <a href="#about" onClick={toggleMenu}>
+              ABOUT
+            </a>
           </li>
-          <li ref={projectsRef} className={`${styles.links}  ${styles.hidden}`}>
-            <a href="#projects">PROJECTS</a>
+          <li ref={projectsRef} className={`${styles.links} ${styles.hidden}`}>
+            <a href="#projects" onClick={toggleMenu}>
+              PROJECTS
+            </a>
           </li>
-          <li ref={contactRef} className={`${styles.links}  ${styles.hidden}`}>
-            <a href="#contact">CONTACT</a>
+          <li ref={contactRef} className={`${styles.links} ${styles.hidden}`}>
+            <a href="#contact" onClick={toggleMenu}>
+              CONTACT
+            </a>
           </li>
         </ul>
         <button className={styles.btnMenu} onClick={toggleMenu}>

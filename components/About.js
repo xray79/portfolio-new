@@ -7,10 +7,7 @@ const About = () => {
       <div className={stylesAbout.container}>
         <div>
           <h2 className={stylesAbout.heading}>About me</h2>
-          <p>
-            After graduating in 2020 with an Engineering degree I have been
-            doing online courses related to web development
-          </p>
+          <p>After studying many online courses</p>
         </div>
 
         <div>
