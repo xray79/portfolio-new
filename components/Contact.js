@@ -26,7 +26,7 @@ const Contact = () => {
     e.preventDefault();
 
     // post request to api
-    Axios.post("http://localhost:4000/api", { data })
+    Axios.post("/api", { data })
       .then((response) => {
         console.log(response);
       })
