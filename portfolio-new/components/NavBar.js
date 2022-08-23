@@ -1,26 +1,13 @@
 import styles from "../styles/Navbar.module.scss";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import Script from "next/script";
 
 const NavBar = () => {
-  const navRef = useRef();
-  const ulRef = useRef();
-  const homeRef = useRef();
-  const projectsRef = useRef();
-  const aboutRef = useRef();
-  const contactRef = useRef();
+  const listRef = useRef();
 
   const toggleMenu = () => {
-    // change menu to responsive at smaller screen
-    navRef.current.classList.toggle(styles.navBarRes);
-    ulRef.current.classList.toggle(styles.ulRes);
-    homeRef.current.classList.toggle(styles.homeRes);
-
-    // hide and show menu
-    homeRef.current.classList.toggle(styles.hidden);
-    projectsRef.current.classList.toggle(styles.hidden);
-    aboutRef.current.classList.toggle(styles.hidden);
-    contactRef.current.classList.toggle(styles.hidden);
+    // hide and show menu when links are clicked
+    listRef.current.classList.toggle(styles.hidden);
   };
 
   return (
@@ -33,36 +20,33 @@ const NavBar = () => {
         nomodule
         src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
       />
-      <nav ref={navRef} className={styles.navBar}>
-        <ul ref={ulRef} className={styles.navList}>
-          <li
-            ref={homeRef}
-            className={`${styles.links} ${styles.home} ${styles.hidden}`}
-          >
+      <nav ref={listRef} className={`${styles.navBar} ${styles.hidden}`}>
+        <ul>
+          <li className={`${styles.links} ${styles.home}`}>
             <a href="#" onClick={toggleMenu}>
               HOME
             </a>
           </li>
-          <li ref={aboutRef} className={`${styles.links} ${styles.hidden}`}>
+          <li className={`${styles.links}`}>
             <a href="#about" onClick={toggleMenu}>
               ABOUT
             </a>
           </li>
-          <li ref={projectsRef} className={`${styles.links} ${styles.hidden}`}>
+          <li className={`${styles.links}`}>
             <a href="#projects" onClick={toggleMenu}>
               PROJECTS
             </a>
           </li>
-          <li ref={contactRef} className={`${styles.links} ${styles.hidden}`}>
+          <li className={`${styles.links}`}>
             <a href="#contact" onClick={toggleMenu}>
               CONTACT
             </a>
           </li>
         </ul>
-        <button className={styles.btnMenu} onClick={toggleMenu}>
-          <ion-icon name="menu-outline" size="large"></ion-icon>
-        </button>
       </nav>
+      <button className={styles.btnMenu} onClick={toggleMenu}>
+        <ion-icon name="menu-outline" size="large"></ion-icon>
+      </button>
     </>
   );
 };
