@@ -1,0 +1,52 @@
+/* hero section */
+
+.hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.699), rgba(0, 0, 0, 0.2)),
+    url(../public/splash.webp);
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100vh;
+  font-size: 2rem;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+
+.textContainer {
+  position: absolute;
+  max-width: 60rem;
+  margin: 0 auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.textContainer h1 {
+  margin-bottom: 3rem;
+}
+
+/*  hero section button */
+
+.btn {
+  padding: 1rem 2rem;
+  margin-top: 3rem;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+.btnHero {
+  font-size: 1.7rem;
+  background-color: aliceblue;
+  transition: all 0.2s ease;
+}
+
+.btnHero:hover {
+  box-shadow: 1rem 1.5rem 1.5rem rgba(0, 0, 0, 0.261);
+  transform: translateY(-0.5rem);
+}
+
+.btnHero:active {
+  transform: translateY(-0.2rem);
+  box-shadow: 1rem 0.7rem 0.7rem rgba(0, 0, 0, 0.261);
+}
