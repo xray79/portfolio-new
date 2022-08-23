@@ -3,11 +3,11 @@ import { useRef, useState } from "react";
 import Script from "next/script";
 
 const NavBar = () => {
-  const listRef = useRef();
+  const navRef = useRef();
 
   const toggleMenu = () => {
     // hide and show menu when links are clicked
-    listRef.current.classList.toggle(styles.hidden);
+    navRef.current.classList.toggle(styles.hidden);
   };
 
   return (
@@ -20,7 +20,7 @@ const NavBar = () => {
         nomodule
         src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
       />
-      <nav ref={listRef} className={`${styles.navBar} ${styles.hidden}`}>
+      <nav ref={navRef} className={`${styles.navBar} ${styles.hidden}`}>
         <ul>
           <li className={`${styles.links} ${styles.home}`}>
             <a href="#" onClick={toggleMenu}>
