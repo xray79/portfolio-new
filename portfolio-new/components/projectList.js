@@ -1,7 +1,7 @@
 const projectList = [
   {
     name: "Goalsetter",
-    desc: "Full-stack MERN app hosted on Heroku. Allows users to log in and save individual goals on MongoDB database. Authentication with JWT. State management with Redux. Back-end REST API created with Express, Front end with React and React Router",
+    desc: "Full-stack MERN app with Redux, hosted on Heroku. Allows users to log in and save individual goals on MongoDB database. Authentication with JWT. Back-end REST API with Express, Front end with React and React Router",
     live: "https://mernappih.herokuapp.com/",
     code: "https://github.com/xray79/mernappih",
   },

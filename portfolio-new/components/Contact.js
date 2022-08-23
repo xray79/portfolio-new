@@ -1,11 +1,47 @@
 import styles from "../styles/Contact.module.scss";
-import { ToastContainer, toast } from "react-toastify";
+import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { useState } from "react";
+import Axios from "axios";
 
 const Contact = () => {
+  const [data, setData] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    message: "",
+  });
+
+  const { firstName, lastName, email, message } = data;
+
+  const changeHandler = (e) => {
+    setData((prevState) => ({
+      ...prevState,
+      [e.target.name]: e.target.value,
+    }));
+  };
+
   const onSubmit = (e) => {
+    // prevent page refresh
     e.preventDefault();
-    toast("Submitted");
+
+    // post request to api
+    Axios.post("http://localhost:4000/api", { data })
+      .then((response) => {
+        console.log(response);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+
+    // show toast and reset data
+    toast.success("Sent!");
+    setData({
+      firstName: "",
+      lastName: "",
+      email: "",
+      message: "",
+    });
   };
 
   return (
@@ -20,7 +56,9 @@ const Contact = () => {
                 type="text"
                 name="firstName"
                 id="firstName"
+                value={firstName}
                 placeholder="First name"
+                onChange={changeHandler}
               />
             </div>
             <div className={styles.formGroup}>
@@ -29,7 +67,9 @@ const Contact = () => {
                 type="text"
                 name="lastName"
                 id="lastName"
+                value={lastName}
                 placeholder="Last name"
+                onChange={changeHandler}
               />
             </div>
           </div>
@@ -40,7 +80,9 @@ const Contact = () => {
                 type="email"
                 name="email"
                 id="email"
+                value={email}
                 placeholder="E-mail"
+                onChange={changeHandler}
               />
             </div>
           </div>
@@ -50,7 +92,9 @@ const Contact = () => {
                 className={`${styles.input} ${styles.inputTextArea}`}
                 name="message"
                 id="message"
+                value={message}
                 placeholder="Enter your message here"
+                onChange={changeHandler}
               />
             </div>
           </div>

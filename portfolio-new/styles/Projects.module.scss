@@ -34,7 +34,6 @@
 }
 
 .cards {
-  height: 35rem;
   background-color: skyblue;
   border-radius: 5px;
 }
@@ -43,9 +42,5 @@
   .gridContainer {
     grid-template-columns: 1fr;
     place-items: center;
-  }
-
-  .cards {
-    height: auto;
   }
 }
