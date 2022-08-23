@@ -6,63 +6,34 @@
   margin: 0 auto;
   padding: 2rem 3rem;
 
+  // fixed navbar with space for flexbox
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
   ul {
     list-style: none;
     display: flex;
     align-items: center;
+
+    .home {
+      margin-right: auto;
+    }
+
+    .links {
+      padding: 1rem;
+
+      &:hover {
+        color: rgb(183, 179, 179);
+        transition: 0.2s ease;
+      }
+    }
   }
 }
 
-.home {
-  margin-right: auto;
-}
-
-.links {
-  padding: 1rem;
-
-  &:hover {
-    color: rgb(183, 179, 179);
-    transition: 0.2s ease;
-  }
-}
-
-.btnMenu,
-.btnClose {
-  border: none;
-  background: none;
-  cursor: pointer;
-  color: white;
-  display: none;
-  margin-left: auto;
-}
-
-/*  responsive navbar on click */
-.navBarRes {
-  position: fixed;
-  top: 0;
-  left: 0;
-
-  background-color: rgba(0, 0, 0, 0.677);
-
-  height: 100vh;
-  width: 100vw;
-  display: grid;
-  place-items: center;
-
-  z-index: 5;
-}
-.ulRes {
-  display: flex;
-  flex-direction: column;
-}
-
-.homeRes {
-  margin-right: 0;
-}
 .btnMenu {
-  position: fixed;
-  top: 4%;
-  right: 5%;
+  display: none;
 }
 
 /*  responsive media query */
@@ -70,6 +41,36 @@
 @media (max-width: 935px) {
   .btnMenu {
     display: block;
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: white;
+
+    position: fixed;
+    top: 4%;
+    right: 5%;
+    z-index: 6;
+  }
+
+  .navBar {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+    z-index: 5;
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      background-color: rgba(0, 0, 0, 0.677);
+      border-radius: 5px;
+      padding: 2rem;
+
+      .home {
+        margin-right: 0;
+      }
+    }
   }
 
   .hidden {

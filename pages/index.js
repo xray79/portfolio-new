@@ -4,7 +4,8 @@ import About from "../components/About";
 import Projects from "../components/Projects";
 import Contact from "../components/Contact";
 import NavBar from "../components/NavBar";
-import { Parallax, ParallaxLayer } from "react-spring";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import { Footer } from "../components/Footer";
 
 const Home = () => {
@@ -16,6 +17,7 @@ const Home = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+      <ToastContainer />
       <header className={styles.hero}>
         <NavBar />
 
