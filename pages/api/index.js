@@ -1,9 +1,5 @@
 import mongoose from "mongoose";
-// import dotenv from "dotenv";
 import Message from "../../model/messageModel";
-
-// add env files
-// dotenv.config();
 
 // connect to DB
 const connectDB = async () => {
@@ -17,7 +13,7 @@ const connectDB = async () => {
 connectDB();
 
 // @desc    Post message
-// @route   POST api/
+// @route   POST /api
 // @access  Public
 const postMessages = async (req, res) => {
   const message = await Message.create(req.body.data);
