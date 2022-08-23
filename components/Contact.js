@@ -29,13 +29,15 @@ const Contact = () => {
     Axios.post("/api", { data })
       .then((response) => {
         console.log(response);
+        toast.success("Sent!");
       })
       .catch((err) => {
         console.log(err);
+        toast.error("Something went wrong");
       });
 
     // show toast and reset data
-    toast.success("Sent!");
+
     setData({
       firstName: "",
       lastName: "",
